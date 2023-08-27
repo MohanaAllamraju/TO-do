@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: aqua;
+
+        }
+
+        .to-docontainer {
+            width: 320px;
+            height: 500px;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-top: 1px;
+            align-items: top;
+        }
+
+        .textbox-container {
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .listbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .listbox {
+            flex: 1;
+            vertical-align: middle;
+            font-weight: light;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 5px;
+            background-color: rgb(236, 242, 242);
+            height: 25px;
+            border-radius: 2px;
+            margin: 10px;
+            color: rgb(10, 0, 0);
+            border: none;
+        }
+
+        .count-container {
+            padding-left: 8px;
+
+        }
+
+
+
+        .to-docontainer h2 {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 10px;
+            padding-left: 15px;
+            text-align: left;
+            font-weight: 500;
+
+        }
+
+        .tasklist-container {
+            text-align: left;
+            font-weight: 500;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        .textbox {
+            vertical-align: middle;
+            padding-left: 10px;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 180px;
+            height: 25px;
+        }
+
+        .totaltodo-count {
+            border: none;
+            width: 180px;
+            padding-left: 10px;
+        }
+
+        #Add-newtodo {
+            height: 25px;
+            width: 25px;
+            background-color: purple;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #clearAll {
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        #trash {
+            color: white;
+            background-color: maroon;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="to-docontainer">
+        <h2>Todo App</h2>
+        <div class="textbox-container">
+            <input type="text" class="textbox" placeholder="Add your new todo"></input>
+            <button id="Add-newtodo">+</button>
+        </div>
+        <div class="tasklist-container">
+            <div class="listbox-container">
+                <input type="text" class="listbox" placeholder="Buy a new gaming laptop"></input>
+                <button id="trash"><i class="glyphicon glyphicon-trash"></i></button>
+            </div>
+            <div class="listbox-container">
+                <input type="text" class="listbox" placeholder="Complete a previous task"></input>
+                <button id="trash"><i class="glyphicon glyphicon-trash"></i></button>
+            </div>
+            <div class="listbox-container">
+                <input type="text" class="listbox" placeholder="Create video for YouTube"></input>
+                <button id="trash"><i class="glyphicon glyphicon-trash"></i></button>
+            </div>
+            <div class="listbox-container">
+                <input type="text" class="listbox" placeholder="Create a new portfolio site"></input>
+                <button id="trash"><i class="glyphicon glyphicon-trash"></i></button>
+            </div>
+        </div>
+        <div class="count-container">
+            <input type="text" class="totaltodo-count" placeholder="You have 4 pending tasks"></input>
+            <button id="clearAll">Clear All</button>
+        </div>
+    </div>
+</body>
+
+</html>
